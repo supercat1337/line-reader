@@ -1,4 +1,3 @@
-```markdown
 # Line Reader
 
 A versatile and efficient Node.js library for reading large files line by line with advanced features like caching, random access, and batch processing.
