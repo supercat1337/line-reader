@@ -8,7 +8,7 @@
     "main": "dist/line-reader.esm.js",
     "homepage": "https://github.com/supercat1337/line-reader",
     "repository": {
-        "url": "https://github.com/supercat1337/line-reader.git",
+        "url": "git+https://github.com/supercat1337/line-reader.git",
         "type": "git"
     },
     "scripts": {
