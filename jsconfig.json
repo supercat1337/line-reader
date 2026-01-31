@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "noEmit": true,
+    "lib": ["ES2020", "es5", "es6", "dom", "dom.iterable"],
+    "moduleResolution": "NodeNext"
+  },
+  "exclude": ["dist/*"],
+  "include": ["src/line-reader.js", "node_modules/*", "src/**/*.d.ts"]
+}

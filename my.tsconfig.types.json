@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "ESNext",
+        "module": "NodeNext",
+        "emitDeclarationOnly": true,
+        "declaration": true, 
+        "outDir": "./",
+        "rootDir": ".",
+        "declarationMap": false,
+        "moduleResolution": "NodeNext",
+        "stripInternal": false
+    },
+    "include": [
+        "./dist/line-reader.esm.js"
+    ],
+    "exclude": []
+}

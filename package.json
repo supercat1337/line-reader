@@ -1,0 +1,28 @@
+{
+    "name": "@supercat1337/line-reader",
+    "version": "1.0.0",
+    "description": "Line reader for Node.js",
+    "license": "MIT",
+    "author": "Supercat1337",
+    "type": "module",
+    "main": "dist/line-reader.esm.js",
+    "homepage": "https://github.com/supercat1337/line-reader",
+    "repository": {
+        "url": "https://github.com/supercat1337/line-reader.git",
+        "type": "git"
+    },
+    "scripts": {
+        "build": "npm run remove_type_files && npm run build_esm && npm run create_types",
+        "build_esm": "rollup ./src/index.js --file ./dist/line-reader.esm.js --format es",
+        "create_types": "npx -p typescript tsc --project my.tsconfig.types.json",
+        "remove_type_files": "del /q *.d.ts *.d.ts.map && cd dist && del /s /q *.d.ts *.d.ts.map && cd ..",
+        "test": "ava",
+        "test:watch": "ava --watch",
+        "test:coverage": "c8 ava"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.10",
+        "ava": "^6.4.1",
+        "c8": "^10.1.3"
+    }
+}
